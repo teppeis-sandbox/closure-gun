@@ -1,6 +1,6 @@
 {
   "name": "closure-gun",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Make faster Google Closure-Compiler for NodeJS & io.js",
   "license": "MIT",
   "author": "Teppei Sato <teppeis@gmail.com>",
@@ -9,8 +9,15 @@
     "closure-gun": "bin/closure"
   },
   "keywords": [
-    "minify", "compiler", "google", "compress", "closure",
-    "java", "linux", "osx", "iojs"
+    "minify",
+    "compiler",
+    "google",
+    "compress",
+    "closure",
+    "java",
+    "linux",
+    "osx",
+    "iojs"
   ],
   "preferGlobal": "true",
   "repository": {
