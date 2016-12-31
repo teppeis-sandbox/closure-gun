@@ -14,14 +14,12 @@ bin/$(OUTFILE):
 	cd "bin" && javac "NailgunTest.java" && gcc "NailgunTest.c" -shared -o $(OUTFILE) $(CCFLAGS)
 
 closure-compiler:
-	mkdir "closure-compiler"
-
 # Use the compiler provide by google-closure-compiler, if available
 ifneq ("$(wildcard ../google-closure-compiler/compiler.jar)","")
 	cp "../google-closure-compiler/compiler.jar" "./closure-compiler/compiler.jar"
-
 else
 # Else, init bootstraping
+	mkdir "closure-compiler"
 	rm -fr "tmp"; mkdir -p "tmp/closure-compiler"
 # Download latest Google Closure Compiler
 	curl -L -o "./tmp/compiler-latest.tgz" "https://dl.google.com/closure-compiler/compiler-latest.tar.gz" \
