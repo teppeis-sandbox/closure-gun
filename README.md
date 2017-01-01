@@ -1,4 +1,4 @@
-closure-gun [![NPM version][npm-image]][npm-url]
+closure-gun [![Travis CI Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url]
 ====
 
 This gets around the long startup time of [Google Closure Compiler](https://developers.google.com/closure/compiler/) using [Nailgun](https://github.com/denji/nailgun), which runs a single java process in the background and keeps all of the classes loaded.
@@ -39,5 +39,7 @@ The advantages are:
 * Teppei Sato <teppeis@gmail.com>
 * Denis Denisov <denji@users.noreply.github.com>
 
+[travis-image]: https://img.shields.io/travis/closure-gun/closure-gun.svg
+[travis-url]: https://travis-ci.org/closure-gun/closure-gun
 [npm-image]: https://img.shields.io/npm/v/closure-gun.svg
 [npm-url]: https://npmjs.org/package/closure-gun
