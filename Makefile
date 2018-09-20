@@ -30,17 +30,19 @@ else
 	rm -fr "tmp"
 endif
 
+nailgunDir := tmp/nailgun-nailgun-all-0.9.3
+
 nailgun:
 # Init bootstraping
 	rm -fr "tmp"; mkdir -p "tmp" "nailgun"
-# Download latest Google Closure Compiler
-	curl -L -o "./tmp/denji-0.9.2.tgz" "https://github.com/closure-gun/nailgun/archive/denji-0.9.2.tar.gz" \
-		&& tar -xf "tmp/denji-0.9.2.tgz" -C "./tmp/"
+# Download Nailgun
+	curl -L -o "tmp/nailgun-all-0.9.3.tgz" "https://github.com/facebook/nailgun/archive/nailgun-all-0.9.3.tar.gz" \
+		&& tar -xf "tmp/nailgun-all-0.9.3.tgz" -C "tmp/"
 # Maven building Nailgun-Server and "ng" binaries
-	make ng -C "./tmp/nailgun-denji-0.9.2" && mvn package --quiet -f "./tmp/nailgun-denji-0.9.2/nailgun-server/pom.xml"
+	make ng -C $(nailgunDir) && mvn package --quiet -f $(nailgunDir)/nailgun-server/pom.xml
 # Move nailgun-server-*.jar and "ng" binaries
-	mv "./tmp/nailgun-denji-0.9.2/nailgun-server/target/nailgun-server-0.9.2.jar" "./nailgun/nailgun.jar"
-	mv "./tmp/nailgun-denji-0.9.2/ng" "./nailgun/ng"
+	mv "$(nailgunDir)/nailgun-server/target/nailgun-server-0.9.3-SNAPSHOT.jar" "./nailgun/nailgun.jar"
+	mv "$(nailgunDir)/ng" "./nailgun/ng"
 # Cleanup
 	rm -fr "tmp"
 
