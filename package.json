@@ -1,7 +1,7 @@
 {
   "name": "@teppeis/closure-gun",
-  "version": "0.1.12",
-  "description": "Make faster Google Closure-Compiler for NodeJS & io.js",
+  "version": "1.0.0",
+  "description": "Make faster Google Closure-Compiler for NodeJS",
   "license": "MIT",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "contributors": "Denis Denisov <denji@users.noreply.github.com>",
