@@ -33,19 +33,19 @@ else
 	rm -fr "tmp"
 endif
 
-nailgunDir := tmp/nailgun-nailgun-all-0.9.3
+nailgunDir := tmp/nailgun-nailgun-all-1.0.0
 
 nailgun:
 # Init bootstraping
 	rm -fr "tmp"; mkdir -p "tmp" "nailgun"
 # Download Nailgun
-	curl -L -o "tmp/nailgun-all-0.9.3.tgz" "https://github.com/facebook/nailgun/archive/nailgun-all-0.9.3.tar.gz" \
-		&& tar -xf "tmp/nailgun-all-0.9.3.tgz" -C "tmp/"
+	curl -L -o "tmp/nailgun-all-1.0.0.tgz" "https://github.com/facebook/nailgun/archive/nailgun-all-1.0.0.tar.gz" \
+		&& tar -xf "tmp/nailgun-all-1.0.0.tgz" -C "tmp/"
 # Maven building Nailgun-Server and "ng" binaries
 	make ng -C $(nailgunDir) && mvn package --quiet -f $(nailgunDir)/nailgun-server/pom.xml
 # Move nailgun-server-*.jar and "ng" binaries
-	mv "$(nailgunDir)/nailgun-server/target/nailgun-server-0.9.3-SNAPSHOT.jar" "./nailgun/nailgun.jar"
-	mv "$(nailgunDir)/ng" "./nailgun/ng"
+	mv "$(nailgunDir)/nailgun-server/target/nailgun-server-1.0.0-SNAPSHOT.jar" "./nailgun/nailgun.jar"
+	mv "$(nailgunDir)/nailgun-client/target/ng" "./nailgun/ng"
 # Cleanup
 	rm -fr "tmp"
 

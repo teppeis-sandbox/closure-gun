@@ -20,7 +20,7 @@ server = [
   dir + '/nailgun/nailgun.jar:' +
   dir + '/closure-compiler/compiler.jar:' +
   dir + '/bin',
-  'com.martiansoftware.nailgun.NGServer'
+  'com.facebook.nailgun.NGServer'
 ]
 
 # Start the server if it's not already running
