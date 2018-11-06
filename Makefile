@@ -22,6 +22,7 @@ ifneq ("$(wildcard ../../google-closure-compiler-java/compiler.jar)","")
 else ifneq ("$(wildcard ../../google-closure-compiler/compiler.jar)","")
 	cp "../../google-closure-compiler/compiler.jar" "./closure-compiler/compiler.jar"
 # Else, init bootstraping
+else
 	rm -fr "tmp"; mkdir -p "tmp/closure-compiler"
 # Download latest Google Closure Compiler
 	curl -L -o "./tmp/compiler-latest.tgz" "https://dl.google.com/closure-compiler/compiler-latest.tar.gz" \
