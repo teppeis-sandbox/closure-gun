@@ -16,11 +16,11 @@ bin/$(OUTFILE):
 closure-compiler:
 	mkdir "closure-compiler"
 # Use the compiler provide by google-closure-compiler, if available
-ifneq ("$(wildcard ../google-closure-compiler-java/compiler.jar)","")
-	cp "../google-closure-compiler-java/compiler.jar" "./closure-compiler/compiler.jar"
+ifneq ("$(wildcard ../../google-closure-compiler-java/compiler.jar)","")
+	cp "../../google-closure-compiler-java/compiler.jar" "./closure-compiler/compiler.jar"
 # before v20181028
-else ifneq ("$(wildcard ../google-closure-compiler/compiler.jar)","")
-	cp "../google-closure-compiler/compiler.jar" "./closure-compiler/compiler.jar"
+else ifneq ("$(wildcard ../../google-closure-compiler/compiler.jar)","")
+	cp "../../google-closure-compiler/compiler.jar" "./closure-compiler/compiler.jar"
 # Else, init bootstraping
 	rm -fr "tmp"; mkdir -p "tmp/closure-compiler"
 # Download latest Google Closure Compiler
