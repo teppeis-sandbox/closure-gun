@@ -1,12 +1,11 @@
-closure-gun [![Travis CI Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url]
-====
+# @teppeis/closure-gun [![NPM version][npm-image]][npm-url]
 
 This gets around the long startup time of [Google Closure Compiler](https://developers.google.com/closure/compiler/) using [Nailgun](https://github.com/denji/nailgun), which runs a single java process in the background and keeps all of the classes loaded.
 
 ## Installation:
 
-* Required: Maven (`mvn`) and C++ Compiler (`gcc` or `clang`)
-* Supported environment: OS X and Linux
+- Required: Maven (`mvn`) and C++ Compiler (`gcc` or `clang`)
+- Supported environment: OS X and Linux
 
 ```sh
 $ npm install closure-gun
@@ -24,11 +23,10 @@ Folked because the original [fast-closure-compiler](https://github.com/evanw/fas
 
 The advantages are:
 
-* Support latest Closure Compiler and Nailgun
-* Support OS X 10.9+ (tested 10.10/10.11)
-* Support Linux environment in addition to OS X
-* Expose `closure-gun` as global command instead of `closure`
-
+- Support latest Closure Compiler and Nailgun
+- Support OS X 10.9+ (tested 10.10/10.11)
+- Support Linux environment in addition to OS X
+- Expose `closure-gun` as global command instead of `closure`
 
 ## License:
 
@@ -36,10 +34,8 @@ The advantages are:
 
 ## Author:
 
-* Teppei Sato <teppeis@gmail.com>
-* Denis Denisov <denji@users.noreply.github.com>
+- Teppei Sato <teppeis@gmail.com>
+- Denis Denisov <denji@users.noreply.github.com>
 
-[travis-image]: https://img.shields.io/travis/closure-gun/closure-gun.svg
-[travis-url]: https://travis-ci.org/closure-gun/closure-gun
-[npm-image]: https://img.shields.io/npm/v/closure-gun.svg
-[npm-url]: https://npmjs.org/package/closure-gun
+[npm-image]: https://img.shields.io/npm/v/@teppeis/closure-gun.svg
+[npm-url]: https://npmjs.org/package/@teppeis/closure-gun

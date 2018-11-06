@@ -1,33 +1,25 @@
 {
   "name": "@teppeis/closure-gun",
+  "description": "Make faster Google Closure Compiler for Node.js",
   "version": "1.0.0",
-  "description": "Make faster Google Closure-Compiler for NodeJS",
-  "license": "MIT",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "contributors": "Denis Denisov <denji@users.noreply.github.com>",
   "bin": {
     "closure-gun": "bin/closure"
   },
-  "keywords": [
-    "minify",
-    "compiler",
-    "google",
-    "compress",
-    "closure",
-    "java",
-    "linux",
-    "osx",
-    "iojs"
-  ],
-  "preferGlobal": "true",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/closure-gun/closure-gun"
-  },
   "scripts": {
     "install": "make install"
   },
   "peerDependencies": {
-    "google-closure-compiler": ">=20160822.1.0"
-  }
+    "google-closure-compiler-java": ">=20181028.1.0"
+  },
+  "repository": "teppeis-sandbox/closure-gun",
+  "keywords": [
+    "closure",
+    "compiler",
+    "google",
+    "java",
+    "nailgun"
+  ],
+  "license": "MIT"
 }
