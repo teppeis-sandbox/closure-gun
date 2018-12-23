@@ -1,3 +1,1 @@
-/bin/libNailgunTest.*
-/bin/NailgunTest.class
-/closure-compiler/
+node_modules
