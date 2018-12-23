@@ -1,14 +1,16 @@
-# @teppeis/closure-gun [![NPM version][npm-image]][npm-url]
+# @teppeis/closure-gun
 
-This gets around the long startup time of [Google Closure Compiler](https://developers.google.com/closure/compiler/) using [Nailgun](https://github.com/denji/nailgun), which runs a single java process in the background and keeps all of the classes loaded.
+[![NPM version][npm-image]][npm-url]
+
+This gets around the long startup time of [Google Closure Compiler](https://developers.google.com/closure/compiler/) using [Nailgun](https://github.com/facebook/nailgun), which runs a single java process in the background and keeps all of the classes loaded.
 
 ## Installation:
 
-- Required: Maven (`mvn`) and C++ Compiler (`gcc` or `clang`)
-- Supported environment: OS X and Linux
+- Required: Java and Python
+- Supported environment: macOS and Linux
 
 ```sh
-$ npm install closure-gun
+$ npm install @teppeis/closure-gun
 ```
 
 ## Usage:
