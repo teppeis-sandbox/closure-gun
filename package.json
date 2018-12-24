@@ -16,7 +16,7 @@
     "closure-gun-stop": "bin/closure-gun-stop.js"
   },
   "scripts": {
-    "test": "./bin/closure.js --version"
+    "test": "./bin/closure-gun.js --version"
   },
   "peerDependencies": {
     "google-closure-compiler": "*"
