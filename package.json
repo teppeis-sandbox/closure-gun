@@ -12,7 +12,8 @@
     "nailgun"
   ],
   "bin": {
-    "closure-gun": "bin/closure.js"
+    "closure-gun": "bin/closure-gun.js",
+    "closure-gun-stop": "bin/closure-gun-stop.js"
   },
   "scripts": {
     "test": "./bin/closure.js --version"

@@ -9,10 +9,10 @@ const exec = util.promisify(child_process.exec);
 
 let compilerPath = null;
 try {
+  // eslint-disable-next-line node/no-extraneous-require
   compilerPath = require('google-closure-compiler-java');
 } catch (ignore) {
   try {
-    // eslint-disable-next-line node/no-extraneous-require
     compilerPath = require('google-closure-compiler').compiler.COMPILER_PATH;
   } catch (ignore) {
     console.error('google-closure-compiler is not found');

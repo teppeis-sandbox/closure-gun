@@ -15,8 +15,16 @@ $ npm install @teppeis/closure-gun
 
 ## Usage:
 
+Execute Closure Compiler (start closure-gun server if not started)
+
 ```sh
 $ closure-gun --js script.js --js_output_file script.min.js
+```
+
+Stop closure-gun server
+
+```sh
+$ closure-gun-stop
 ```
 
 #### closure-gun (fork fast-closure-compiler2) vs. fast-closure-compiler:
