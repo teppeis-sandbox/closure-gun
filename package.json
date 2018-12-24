@@ -3,25 +3,31 @@
   "description": "Make faster Google Closure Compiler for Node.js",
   "version": "2.0.0-beta.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
-  "contributors": "Denis Denisov <denji@users.noreply.github.com>",
-  "engine": {
-    "node": ">=8"
+  "engines": {
+    "node": ">=8.10"
+  },
+  "bin": {
+    "closure-gun": "bin/closure-gun.js",
+    "closure-gun-stop": "bin/closure-gun-stop.js"
   },
   "files": [
     "bin",
     "nailgun"
   ],
-  "bin": {
-    "closure-gun": "bin/closure-gun.js",
-    "closure-gun-stop": "bin/closure-gun-stop.js"
-  },
   "scripts": {
     "test": "./bin/closure-gun.js --version"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-teppeis": "^8.3.1",
+    "google-closure-compiler": "^20181210.0.0",
+    "prettier": "^1.15.3"
   },
   "peerDependencies": {
     "google-closure-compiler": "*"
   },
   "repository": "teppeis-sandbox/closure-gun",
+  "contributors": "Denis Denisov <denji@users.noreply.github.com>",
   "keywords": [
     "closure",
     "compiler",
@@ -29,11 +35,5 @@
     "java",
     "nailgun"
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^5.11.0",
-    "eslint-config-teppeis": "^8.3.1",
-    "google-closure-compiler": "^20181210.0.0",
-    "prettier": "^1.15.3"
-  }
+  "license": "MIT"
 }
